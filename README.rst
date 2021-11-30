@@ -2,7 +2,8 @@
 ZIB Coding Challenge
 ====================
 
-by David Nolte
+by David Nolte\\
+Cf.~also the report :code:`doc.py`.
 
 Create docker network
 =====================
