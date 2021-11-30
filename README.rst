@@ -22,8 +22,8 @@ Build and run docker environment:
 
    docker run --net challenge -p 27017:27017 --name mydb -d mongo:latest
 
-Then execute the python script :code:`populate_db.py` to download the `ECG dataset<https://zenodo.org/record/5711347/files/ECG_Rhythm_Lead_I.csv?download=1>`_
-and `data annotations<https://physionet.org/files/ptb-xl/1.0.1/ptbxl_database.csv?download>`_
+Then execute the python script :code:`populate_db.py` to download the ECG dataset (https://zenodo.org/record/5711347/files/ECG_Rhythm_Lead_I.csv?download=1)
+and data annotations (https://physionet.org/files/ptb-xl/1.0.1/ptbxl_database.csv?download)
 and store them in the database:
 
 .. code:: shell
