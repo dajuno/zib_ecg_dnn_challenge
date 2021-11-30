@@ -2,8 +2,9 @@
 ZIB Coding Challenge
 ====================
 
-by David Nolte\\
-Cf.~also the report :code:`doc.py`.
+by David Nolte
+
+Cf. also the report :code:`doc/doc.pdf`.
 
 Create docker network
 =====================
@@ -70,7 +71,7 @@ To restart the container and notebook in a later session, run:
 Run the test case of ECG signal classification 
 -----------------------------------------------
 
-In JupyterLab, execute the notebook :code:`ecg_resnet.ipynb` to:
+In JupyterLab, inside the folder :code:`work/`, execute the notebook :code:`ecg_resnet.ipynb` to:
 
 1. connect to the data base, obtain and preprocess the timeseries data,
 2. build the  ResNet (Residual Neural Network) model with keras as proposed by https://github.com/spdrnl/ecg/blob/master/ECG.ipynb,
