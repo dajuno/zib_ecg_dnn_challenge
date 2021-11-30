@@ -4,10 +4,18 @@ ZIB Coding Challenge
 
 by David Nolte
 
-Cf. also the report :code:`doc/doc.pdf`.
+
+Introduction
+============
+
+We are going to use a deep neural network to classify ECG time series. Two communicating docker containers, for the database and the computation codes (via jupyter notebooks), need to be set up as indicated below.
+Cf. the report :code:`doc/doc.pdf` for more details on the chosen components, data processing and the results.
+
+Setup
+=====
 
 Create docker network
-=====================
+---------------------
 
 Create a docker network in which the containers will be linked:
 
@@ -16,7 +24,7 @@ Create a docker network in which the containers will be linked:
    docker network create challenge
 
 Create database
-===============
+---------------
 
 Build and run docker environment:
 
@@ -43,10 +51,10 @@ to activate the database.
 
 
 Data analysis
-=============
+-------------
 
 Build and start JupyterLab container
-------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Inside the folder :code:`docker_jl`, execute
 
@@ -69,7 +77,7 @@ To restart the container and notebook in a later session, run:
 
 
 Run the test case of ECG signal classification 
------------------------------------------------
+==============================================
 
 In JupyterLab, inside the folder :code:`work/`, execute the notebook :code:`ecg_resnet.ipynb` to:
 
