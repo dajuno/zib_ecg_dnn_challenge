@@ -26,7 +26,7 @@ Create a docker network in which the containers will be linked:
 Create database
 ---------------
 
-Build and run docker environment:
+The MongoDB database is used. Create a docker container from the default image via
 
 .. code:: shell
 
@@ -56,13 +56,13 @@ Data analysis
 Build and start JupyterLab container
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Inside the folder :code:`docker_jl`, execute
+In order to create a costumized docker image change to the folder :code:`docker_jl` and execute:
 
 .. code:: shell
 
    docker build -t jl_tf .
 
-To create and start a persistent container, run:
+To create and start a persistent container named "myjl", run:
 
 .. code:: shell
 
@@ -74,6 +74,8 @@ To restart the container and notebook in a later session, run:
 
    docker start myjl
    docker exec myjl jupyter-lab
+   
+Note:  It is possible that the mapped ports for the jupyter and MongoDB containers are already taken. In that case, simply change the port before the colon.            The MongoDB port needs to be modified accordingly also in the script :code:`docker_db/populate_db.py` and in the notebook :code:`database.ipynb`.
 
 
 Run the test case of ECG signal classification 
